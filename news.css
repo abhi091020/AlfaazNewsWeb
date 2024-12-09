@@ -1,0 +1,445 @@
+/* General Styles */
+
+.marq {
+  background-color: #3470b9;
+}
+
+body { 
+  font-family: Arial, sans-serif;
+  margin: 0; 
+  padding: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  padding: 0;
+  background-color: #333;
+  color: white;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Adjust as necessary */
+  background-color: #333; /* Background color for the header */
+  width: 100%; /* Ensure full width */
+}
+
+.logo img {
+  height: 50px; /* Adjust the height as necessary */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.menu-toggle {
+  display: none; /* Hide toggle button by default */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav.sticky-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start; /* Align items to the start */
+}
+
+nav.sticky-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 100px; /* Shift tabs slightly to the left */
+}
+
+nav.sticky-nav ul li {
+  display: inline-block;
+}
+
+nav.sticky-nav ul li a {
+  color: white;
+  text-align: center;
+  padding: 14px 10px; /* Adjusted padding for better alignment */
+  text-decoration: none;
+  display: block; /* Ensure full block clickability */
+}
+
+nav.sticky-nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Search Form Styles */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-item {
+  margin: 0 20px; /* Center the search item */
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-form button {
+  padding: 5px;
+  background-color: #575757;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #444444;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Show the toggle button on small screens */
+  }
+
+  nav.sticky-nav ul {
+      display: none; /* Hide menu by default on small screens */
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+  }
+
+  nav.sticky-nav ul.show {
+      display: flex; /* Show menu when toggled */
+  }
+
+  nav.sticky-nav ul li {
+      display: block;
+      width: 100%;
+  }
+
+  nav.sticky-nav ul li a {
+      padding: 14px 20px;
+      border-bottom: 1px solid #575757;
+  }
+
+  nav.sticky-nav ul li a:hover {
+      background-color: #575757;
+  }
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333333;
+  padding: 20px 0;
+  width: 100%; /* Ensure full width */
+  height: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%; /* Ensure full width */
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+  position: relative;
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column; /* Align footer links vertically */
+  align-items: center;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0; /* Adjust margins for spacing */
+}
+
+.footer-links a:hover {
+  color: #c0aa2f;
+  text-decoration: underline;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-out, color 0.3s ease-out, text-decoration 0.3s ease-out;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center; /* Ensure horizontal alignment */
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  color: #2e278b;
+  text-decoration: underline;
+  transform: scale(1.5);
+}
+
+.social-media i {
+  font-size: 20px;
+}
+
+.social-media a[href*="instagram.com"]:hover {
+  color: #de3e41;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cont {
+  height: 200px;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links {
+      flex-direction: column; /* Ensure vertical alignment on small screens */
+      align-items: center; /* Center align the links */
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      margin: 20px 0;
+  }
+
+  .footer-links {
+      align-items: center;
+  }
+
+  .social-media {
+      margin-right: 0;
+      flex-direction: row; /* Ensure horizontal alignment on small screens */
+  }
+}
+
+/* Main Page */
+
+/* Page Content */
+.header {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-column {
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.right-column {
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headline img {
+  width: 250px;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.headline p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #004499;
+}
+
+#news-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#news-list li {
+  font-size: 1.1em;
+  color: #555;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header {
+  background-color: #5e5a5a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-column {
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.right-column {
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headline img {
+  width: 200px;
+  height: 180px;
+  margin-right: 20px;
+}
+
+.headline p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #004499;
+}
+
+#news-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#news-list li {
+  font-size: 1.1em;
+  color: #555;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* News Tabs Styles */
+.news-tabs {
+  display: flex;
+  justify-content: center; /* Center the tabs horizontally */
+  margin: 20px 0;
+}
+
+.news-tabs a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 5px; /* Space between tabs */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.news-tabs a:hover {
+  background-color: #0066cc;
+  color: white;
+}
+
+.news-tabs a.active {
+  background-color: #0066cc;
+  color: white;
+}
+
+/* Styling for the sections under each tab */
+#politics, #world, #sport, #entertainment, #bollywood, #hollywood, #astrology, #business, #tech, #education, #life-and-style {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

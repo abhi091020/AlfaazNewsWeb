@@ -1,0 +1,248 @@
+/* Basic styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+}
+
+/* Styles for screens wider than 600px */
+@media (min-width: 600px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+/* Styles for screens wider than 768px */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* Styles for screens wider than 1024px */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+header {
+    width: 100%;
+    padding: 0;
+    background-color: #333;
+    color: white;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  
+ /* Container styling */
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust as necessary */
+    background-color: #333; /* Background color for the header */
+  }
+  
+  /* Styling for the logo */
+  .logo {
+    margin: 0; /* Ensure no extra margins */
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust as necessary */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Navbar styling */
+  nav.sticky-nav {
+    flex: 1;
+    text-align: right; /* Align links to the right */
+  }
+  
+  nav.sticky-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  nav.sticky-nav ul li {
+    display: inline;
+  }
+  
+  nav.sticky-nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  nav.sticky-nav ul li a:hover {
+    background-color: #575757;
+  }
+   
+  
+
+
+  /* Footer Styles */
+  footer {
+    background-color: #333333;
+    /* color: white; */
+    padding: 20px 0;
+    width: 100%;
+    height: 290px ;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+  
+  .footer-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    margin-left: 100px;
+  }
+  
+  .footer-links a:hover {
+    color: #c0aa2f; /* Change to your desired hover color */
+    text-decoration: underline;
+    
+        color: #ff9800; /* Change to your desired hover color */
+        text-decoration: underline;
+        transform: scale(1.2); /* Increase size on hover */
+        transition: transform 0.3s ease-out, color 0.3s ease-out, text-decoration 0.3s ease-out; /* Smooth transition for hover effects */
+      
+  }
+  
+  .social-media {
+    display: flex; /* Aligns links horizontally */
+    justify-content: center; /* Centers the links */
+    gap: 25px; /* Space between the links */
+    margin-right: 130px;
+  }
+  
+  .social-media a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  .social-media a:hover {
+    color: #2e278b; /* Change to your desired hover color */
+    text-decoration: underline;
+    transform: scale(1.5); /* Increase size on hover */
+  }
+  
+  .social-media a[href*="instagram.com"]:hover {
+    color: #de3e41; /* Instagram-specific hover color */
+  }
+  
+  .social-media i {
+    font-size: 20px;
+    margin-right: 0; /* Remove right margin since we're using gap now */
+  }
+  
+  
+  .copyright {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* ---------------------------------------------------------------------------------- */
+  /* Base styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #825050;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+#directory {
+  margin-top: 1rem;
+}
+
+#org-list {
+  list-style: none;
+  padding: 0;
+}
+
+#org-list li {
+  background-color: #f0f0f0;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+#search-bar {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+#search-button {
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+#search-button img {
+  width: 20px;
+  height: 20px;
+}

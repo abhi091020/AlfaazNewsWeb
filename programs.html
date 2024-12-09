@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programs</title>
+    <link rel="stylesheet" href="programs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <header>
+      <div class="container1">
+        <div class="logo">
+          <a href="#home"><img src="/images/logo.jpg" alt="logo" /></a>
+        </div>
+        <nav class="sticky-nav">
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="menu">
+            <li class="search-item">
+              <form class="search-form">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="events.html">Event</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="directory.html">Industry Directory</a></li>
+            <li><a href="joinona.html">Join ONA</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- nav end -->
+
+    <!-- Img Con Start -->
+    <div class="programs1">
+      <div class="pimage-container">
+        <img src="/images/program-main.png" alt="Description of Image" />
+      </div>
+    </div>
+    <!-- img Con End -->
+    <!-- Main 1 -->
+    <header class="header">
+      <h1>Programs</h1>
+    </header>
+    <!-- Sub-Main 1 -->
+    <main class="main">
+      <div class="programs">
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>ONA Annual Conference</h2>
+              <p>
+                The Online News Association Conference is the premier gathering
+                of highly engaged digital journalists who are shaping the future
+                of media. Join us for ONA24, Sept. 18–21, in Atlanta.
+              </p>
+            </div>
+            <button onclick="learnMore('ona-conference')">Learn More</button>
+          </div>
+        </div>
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>AI in Journalism Initiative</h2>
+              <p>
+                This program helps news organizations evaluate tools and set
+                strategy through hands-on trainings, practitioner meetups and
+                gatherings with leaders in journalism and technology.
+              </p>
+            </div>
+            <button onclick="learnMore('ai-journalism')">Learn More</button>
+          </div>
+        </div>
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>Online Journalism Awards</h2>
+              <p>
+                The Online Journalism Awards (OJAs), launched in May 2000, are
+                the only comprehensive set of journalism prizes honoring
+                excellence in digital journalism around the world.
+              </p>
+            </div>
+            <button onclick="learnMore('journalism-awards')">Learn More</button>
+          </div>
+        </div>
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>Digital Women Leaders (DWL)</h2>
+              <p>
+                DWL is a mentorship resource that connects women and non-gender
+                binary people working in news with knowledgeable, understanding
+                mentors who might otherwise be hard to find.
+              </p>
+            </div>
+            <button onclick="learnMore('digital-women-leaders')">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>Women’s Leadership Accelerator</h2>
+              <p>
+                The Women’s Leadership Accelerator is a six-month, intensive
+                program that supercharges the leadership and management skills
+                of women who are pushing digital innovation.
+              </p>
+            </div>
+            <button onclick="learnMore('womens-leadership-accelerator')">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+      <h2 style="color: rgb(121, 121, 206)">Our Previous Programs</h2>
+      <div class="programs">
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>Student Newsroom</h2>
+              <p>
+                The Student Newsroom and Innovation Lab, which ran from 2003
+                through 2023, immersed undergraduate and graduate college
+                students in a digital media environment by providing hands-on
+                experience covering ONA’s Annual Conference and Online
+                Journalism Awards ceremony.
+              </p>
+            </div>
+            <button onclick="learnMore('student-newsroom')">Learn More</button>
+          </div>
+        </div>
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>Executive Women Leaders Salon</h2>
+              <p>
+                ONA hosted a three-part conversation series in 2023 designed to
+                open space for women in executive digital journalism leadership.
+              </p>
+            </div>
+            <button onclick="learnMore('executive-women-leaders-salon')">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>Career Day</h2>
+              <p>
+                ONA Career Day is a great opportunity for job, higher ed and
+                fellowship opportunity seekers to make valuable connections and
+                participate in career-focused learning and networking.
+              </p>
+            </div>
+            <button onclick="learnMore('career-day')">Learn More</button>
+          </div>
+        </div>
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>Community Circles</h2>
+              <p>
+                ONA Community Circles were launched at the onset of the COVID-19
+                pandemic to connect groups of community members to address
+                evolving challenges within the community.
+              </p>
+            </div>
+            <button onclick="learnMore('community-circles')">Learn More</button>
+          </div>
+        </div>
+        <div class="program">
+          <div class="program-content">
+            <div class="program-details">
+              <h2>Journalism 360</h2>
+              <p>
+                Journalism 360 is a global network of storytellers accelerating
+                the understanding and production of immersive journalism.
+              </p>
+            </div>
+            <button onclick="learnMore('journalism-360')">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Sub-Main End -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-media">
+            <a href="https://www.facebook.com/yourprofile" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="news.html">News</a>
+            <a href="programs.html">Programs</a>
+            <a href="events.html">Event</a>
+            <a href="resources.html">Resources</a>
+            <a href="career.html">Career</a>
+            <a href="directory.html">Industry Directory</a>
+            <a href="joinona.html">Join ONA</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Alfaaz Times. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

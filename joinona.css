@@ -1,0 +1,496 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  width: 100%;
+  max-width: 1700px;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+}
+.logo img {
+  height: 50px; /* Adjust the height as necessary */
+  width: 100px;
+}
+
+.membership-info,
+.membership-benefits,
+.membership-options,
+.existing-members {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px 0;
+}
+
+.main-header {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.main-header h1 {
+  margin-top: 0;
+  color: #333;
+}
+
+.main-header p,
+.membership-info p,
+.membership-options li,
+.existing-members p {
+  color: #777;
+}
+
+.icon {
+  font-size: 50px;
+  margin: 20px 0;
+  color: #2e278b;
+}
+
+.membership-info h2,
+.membership-options h2,
+.existing-members h2 {
+  color: #333;
+}
+
+.membership-options ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.membership-options li {
+  margin: 10px 0;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .membership-info,
+  .membership-benefits,
+  .membership-options,
+  .existing-members {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .main-header {
+    padding: 15px;
+  }
+
+  .main-header h1,
+  .membership-info h2,
+  .membership-options h2,
+  .existing-members h2 {
+    font-size: 1.6em; /* Slightly larger for mobile readability */
+  }
+
+  .icon {
+    font-size: 40px; /* Reduce icon size */
+  }
+
+  /* Adjust header image for mobile */
+  .header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Button adjustments for mobile */
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  padding: 0;
+  background-color: #333;
+  color: white;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Adjust as necessary */
+  background-color: #333; /* Background color for the header */
+  width: 100%; /* Ensure full width */
+}
+
+.logo {
+  margin: 0; /* Ensure no extra margins */
+}
+
+.menu-toggle {
+  display: none; /* Hide toggle button by default */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav.sticky-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start; /* Align items to the start */
+}
+
+nav.sticky-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 100px; /* Shift tabs slightly to the left */
+}
+
+nav.sticky-nav ul li {
+  display: inline-block;
+}
+
+nav.sticky-nav ul li a {
+  color: white;
+  text-align: center;
+  padding: 14px 10px; /* Adjusted padding for better alignment */
+  text-decoration: none;
+  display: block; /* Ensure full block clickability */
+}
+
+nav.sticky-nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Search Form Styles */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-item {
+  margin: 0 20px; /* Center the search item */
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-form button {
+  padding: 5px;
+  background-color: #575757;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #444444;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the toggle button on small screens */
+  }
+
+  nav.sticky-nav ul {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav.sticky-nav ul.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  nav.sticky-nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav.sticky-nav ul li a {
+    padding: 14px 20px;
+    border-bottom: 1px solid #575757;
+  }
+
+  nav.sticky-nav ul li a:hover {
+    background-color: #575757;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333333;
+  padding: 20px 0;
+  width: 100%; /* Ensure full width */
+  height: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%; /* Ensure full width */
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+  position: relative;
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column; /* Align footer links vertically */
+  align-items: center;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0; /* Adjust margins for spacing */
+}
+
+.footer-links a:hover {
+  color: #c0aa2f;
+  text-decoration: underline;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-out, color 0.3s ease-out,
+    text-decoration 0.3s ease-out;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center; /* Ensure horizontal alignment */
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  color: #2e278b;
+  text-decoration: underline;
+  transform: scale(1.5);
+}
+
+.social-media i {
+  font-size: 20px;
+}
+
+.social-media a[href*="instagram.com"]:hover {
+  color: #de3e41;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cont {
+  height: 200px;
+  width: 100%;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column; /* Stack footer links vertically */
+    align-items: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+
+  .social-media {
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+}
+
+.logo img {
+  height: 50px; /* Adjust the height as necessary */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* My CSS 2 */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+.membership-categories {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.membership-categories h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.team-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.category h3 {
+  color: #333;
+}
+
+.category p,
+.category li {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.category:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #e0f7fa; /* Light color on hover */
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  align-self: center;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .team-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.main-header {
+  transform: scale(1.2);
+}
